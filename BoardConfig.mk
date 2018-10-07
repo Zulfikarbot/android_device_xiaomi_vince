@@ -16,7 +16,7 @@
 # Inherit from common msm8953-common
 -include device/xiaomi/msm8953-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/mido
+DEVICE_PATH := device/xiaomi/vince
 
 # Filesystem
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -24,7 +24,7 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Kernel
-TARGET_KERNEL_CONFIG := mido_defconfig
+TARGET_KERNEL_CONFIG := vince_defconfig
 
 # Lineage Hardware
 BOARD_HARDWARE_CLASS += \
@@ -37,7 +37,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 25765043200 # 25765059584 - 16384
 BOARD_VENDORIMAGE_PARTITION_SIZE := 872415232
 
 # Power
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
+TARGET_TAP_TO_WAKE_NODE := "/sys/devices/soc/78b7000.i2c/i2c-3/3-0020/input/input1/wake_gesture"
 
 # Sepolicy
 #BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
@@ -48,4 +48,4 @@ BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Inherit from the proprietary version
--include vendor/xiaomi/mido/BoardConfigVendor.mk
+-include vendor/xiaomi/vince/BoardConfigVendor.mk

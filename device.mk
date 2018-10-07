@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product, vendor/xiaomi/mido/mido-vendor.mk)
+$(call inherit-product, vendor/xiaomi/vince/vince-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Overlay
@@ -27,19 +27,15 @@ $(call inherit-product, device/xiaomi/msm8953-common/msm8953.mk)
 # Audio configuration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
-    $(LOCAL_PATH)/audio/mixer_paths_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_mtp.xml
-
-# Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_mido
+    $(LOCAL_PATH)/audio/mixer_paths_vince.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_vince.xml
 
 # Consumerir
 PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-service.xiaomi_mido
+    android.hardware.ir@1.0-service.xiaomi_vince
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.mido.rc \
+    init.vince.rc \
     init.goodix.sh
 
 # Sensors
