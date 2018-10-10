@@ -13,16 +13,16 @@ vendor/lib64/hw/audio.primary.msm8953.so
 vendor/lib/libtinyalsa.so
 vendor/lib/libtinycompress.so
 vendor/lib/libtinyxml.so
-vendor/lib64/libtinyalsa.so
-vendor/lib64/libtinycompress.so
-vendor/lib64/libtinyxml.so
 vendor/firmware/tas2557_uCDSP.bin
 
+# Camera - pinned for fix symbol
+vendor/lib/libskia.so|89ff4c400c140fe8418a51b9802cb41b3a61ee94
+vendor/lib/libicuuc-v27.so|3f0149a03eb65921589bb8d96441aedb7477db75
+vendor/lib/libminikin-v27.so|a35c0b1b3471694009511fdf8dfbb14d7988f62c
+vendor/lib/libMiWatermark.so|14e7fbbd029f9a2c012db1323fdb8444d8836467
 
 # Camera XML Configs - from vince
 vendor/etc/camera/camera_config.xml
-vendor/etc/camera/csidtg_camera.xml
-vendor/etc/camera/csidtg_chromatix.xml
 vendor/etc/camera/vince_imx486_ofilm_chromatix.xml
 vendor/etc/camera/vince_imx486_ofilm_chromatix_india.xml
 vendor/etc/camera/vince_ov12a10_sunny_chromatix.xml
@@ -30,31 +30,27 @@ vendor/etc/camera/vince_ov12a10_sunny_chromatix_india.xml
 vendor/etc/camera/vince_ov5675_ofilm_chromatix.xml
 vendor/etc/camera/vince_ov5675_ofilm_chromatix_india.xml
 vendor/etc/camera/vince_ov5675_qtech_chromatix.xml
-vendor/etc/camera/vince_ov5675_qtech_chromatix_india.xml
 
 # QCOM Camera Daemon - from vince
 vendor/bin/mm-qcamera-daemon
 
-
 # QCOM Camera Libraries - from vince
-etc/morpho_lowlight4.0.xml
-lib/libmorpho_groupshot.so
-lib/libmorpho_memory_allocator.so
-lib/libmorpho_panorama.so
-lib/libmorphohht4.0.so
-lib/libicuuc.so
-lib/libMiCameraHal.so
-lib/libminikin.so
-lib/libskia.so
-lib/libtrueportrait.so
-vendor/lib/libmorpho_easy_hdr.so
-vendor/lib/libmorpho_hdr_checker.so
-vendor/lib/libarcsoft_beauty_shot.so
+vendor/lib/hw/camera.msm8953.so
+lib/libtrueportrait.so:vendor/lib/libtrueportrait.so
 vendor/lib/libarcsoft_beautyshot.so
-vendor/lib/libarcsoft_beautyshot_image_algorithm.so
-vendor/lib/libarcsoft_beautyshot_video_algorithm.so
-vendor/lib/libmmjpeg.so
+vendor/lib/libarcsoft_dualcam_refocus.so
+vendor/lib/libarcsoft_high_dynamic_range.so
+vendor/lib/libchromaflash.so
+vendor/lib/libFaceGrade.so
+vendor/lib/libflash_pmic.so
+vendor/lib/libjpegdhw.so
+vendor/lib/libjpegdmahw.so
+vendor/lib/libjpegehw.so
+vendor/lib/lib_lowlight.so
+vendor/lib/libmibokeh_625.so
+vendor/lib/libmmcamera_interface.so
 vendor/lib/libmmjpeg_interface.so
+vendor/lib/libmmjpeg.so
 vendor/lib/libmm-qcamera.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
@@ -62,17 +58,15 @@ vendor/lib/libmpbase.so
 vendor/lib/liboptizoom.so
 vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegdec.so
-vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
+vendor/lib/libqomx_jpegenc.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libseemore.so
-vendor/lib/libtinyalsa.so
-vendor/lib/libtinycompress.so
-vendor/lib/libtinyxml.so
-vendor/lib/libtrueportrait.so
+-vendor/lib/libts_detected_face_hal.so
+-vendor/lib/libts_face_beautify_hal.so
 vendor/lib/libubifocus.so
-vendor/lib/libvidhance.so
 vendor/lib/libvidhance_gyro.so
+vendor/lib/libvidhance.so
 vendor/lib/libXMFD_AgeGender.so
 
 vendor/lib/libmmcamera2_c2d_module.so
@@ -551,8 +545,6 @@ vendor/lib/libmmcamera_vince_ov5675_qtech_eeprom.so
 
 # Camera HIDL - from vince (HACK NEEDED)
 vendor/bin/hw/android.hardware.camera.provider@2.4-service
-vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
-vendor/lib/hw/camera.msm8953.so
 vendor/lib/camera.device@1.0-impl.so
 vendor/lib/camera.device@3.2-impl.so
 vendor/lib/camera.device@3.3-impl.so
