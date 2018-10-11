@@ -564,13 +564,16 @@ vendor/etc/qdcm_calib_data_td4310_fhdplus_e7_g55_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_td4310_fhdplus_e7_video_mode_dsi_panel.xml
 
 # Fingerprint - from vince
-lib64/hw/fingerprint.default.so
-lib64/hw/gf_fingerprint.default.so
-lib64/libgf_algo.so
-lib64/libgf_ca.so
-lib64/libgf_hal.so
-lib64/libgoodixfingerprintd_binder.so
-lib64/libsoftkeymaster.so
+lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.default.so
+vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.default.so
+lib64/libgoodixfingerprintd_binder.so:vendor/lib64/libgoodixfingerprintd_binder.so
+lib64/libgf_algo.so:vendor/lib64/libgf_algo.so
+lib64/libgf_ca.so:vendor/lib64/libgf_ca.so
+lib64/libgf_hal.so:vendor/lib64/libgf_hal.so
+lib/android.hardware.biometrics.fingerprint@2.1.so:vendor/lib/android.hardware.biometrics.fingerprint@2.1.so
+lib64/android.hardware.biometrics.fingerprint@2.1.so:vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so
+vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
-vendor/lib64/com.fingerprints.extension@1.0.so
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|27f43f1e5531e9401eeac271f1554b2e00abddd1
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
