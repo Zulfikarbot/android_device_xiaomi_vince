@@ -36,6 +36,7 @@ BOARD_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="vince-user 7.1.2 N2G47H V9.2.3.0.NEGCNEK release-keys"
+    PRIVATE_BUILD_DESC="vince-user 8.1.0 OPM1.171019.019 V10.0.2.0.OEGMIFH release-keys"
 
-BUILD_FINGERPRINT := xiaomi/vince/vince:7.1.2/N2G47H/V9.2.3.0.NEGCNEK:user/release-keys
+BUILD_FINGERPRINT := xiaomi/vince/vince:8.1.0/OPM1.171019.019/V10.0.2.0.OEGMIFH:user/release-keys
+
