@@ -20,8 +20,6 @@
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds. -->
 <resources>
-<<<<<<< HEAD:overlay/frameworks/base/packages/SystemUI/res/values/dimens.xml
-=======
     <!-- Doze: does this device support STATE_DOZE and STATE_DOZE_SUSPEND?  -->
     <bool name="doze_display_state_supported">true</bool>
 
@@ -38,11 +36,4 @@
          increase the rate of unintentional unlocks. -->
     <bool name="config_lockscreenAntiFalsingClassifierEnabled">false</bool>
 </resources>
->>>>>>> 606a504... Enable Always on Display:overlay/frameworks/base/packages/SystemUI/res/values/config.xml
 
-    <!-- more realistic padding -->
-    <dimen name="rounded_corner_content_padding">12dp</dimen>
-    <!-- Rounded display corners-->
-    <dimen name="rounded_corner_radius">18dp</dimen>
-
-</resources>
