@@ -33,6 +33,20 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# Live Wallpapers
+PRODUCT_PACKAGES += \
+    LiveWallpapersPicker \
+    librs_jni
+
+
+# Google Permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/pixel_2017_exclusive.xml:system/etc/permissions/pixel_2017_exclusive.xml \
+    $(LOCAL_PATH)/permissions/pixel_2017.xml:system/etc/permissions/pixel_2017.xml \
+    $(LOCAL_PATH)/permissions/nexus.xml:system/etc/permissions/nexus.xml \
+    $(LOCAL_PATH)/permissions/google_build.xml:system/etc/permissions/google_build.xml \
+    $(LOCAL_PATH)/permissions/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.vince.rc \
