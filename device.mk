@@ -41,8 +41,10 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.vince.rc \
-    init.goodix.sh
-    init.zuc.rc
+    init.goodix.sh \
+    init.zuc.rc \
+    init.spectrum.rc \
+    init.spectrum.sh
 
 # Sensors
 PRODUCT_COPY_FILES += \
