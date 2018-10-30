@@ -42,6 +42,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.vince.rc \
     init.goodix.sh
+    init.zuc.rc
 
 # Sensors
 PRODUCT_COPY_FILES += \
