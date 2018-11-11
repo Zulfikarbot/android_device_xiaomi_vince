@@ -40,3 +40,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := xiaomi/vince/vince:8.1.0/OPM1.171019.019/V10.0.2.0.OEGMIFH:user/release-keys
 
+# Use Gcam and Jelly
+TARGET_USE_GCAM := true
+TARGET_USE_JELLY := true
