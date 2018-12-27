@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
 # Inherit some common AEX stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
@@ -42,3 +42,6 @@ BUILD_FINGERPRINT := xiaomi/vince/vince:8.1.0/OPM1.171019.019/V10.0.2.0.OEGMIFH:
 
 # Use Gcam and Jelly
 TARGET_USE_JELLY := true
+
+# Gapps
+TARGET_GAPPS_ARCH := arm64
