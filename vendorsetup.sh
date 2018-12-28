@@ -1,1 +1,1 @@
-add_lunch_combo cyber_vince-userdebug
+add_lunch_combo colt_vince-userdebug

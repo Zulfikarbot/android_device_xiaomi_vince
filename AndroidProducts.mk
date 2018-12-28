@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cyber_vince.mk
+    $(LOCAL_DIR)/colt_vince.mk
